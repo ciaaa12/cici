@@ -140,6 +140,7 @@ fi
 print_install "Membuat direktori xray"
 mkdir -p /etc/xray
 curl -s ifconfig.me > /etc/xray/ipvps
+curl -s ifconfig.me > /usr/bin/.ipvps
 touch /etc/xray/domain
 mkdir -p /var/log/xray
 chown www-data.www-data /var/log/xray
@@ -882,6 +883,7 @@ profile
 enable_services
 restart_system
 }
+
 instal
 echo ""
 history -c
