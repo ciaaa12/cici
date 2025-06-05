@@ -636,8 +636,7 @@ clear
 echo "Banner /etc/banner.txt" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
 wget -O /etc/banner.txt "${REPO}Bnr/issue.net"
-REPOS="https://raw.githubusercontent.com/diah082/vip/main/"
-wget -q ${REPOS}install/setrsyslog.sh && chmod +x setrsyslog.sh && ./setrsyslog.sh
+wget -q ${REPO}Fls/setrsyslog.sh && chmod +x setrsyslog.sh && ./setrsyslog.sh
 print_success "Fail2ban"
 }
 function ins_epro(){
