@@ -7,7 +7,7 @@
 <pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && reboot</code></pre>
 
 # INSTALL SCRIPT
-<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/ciaaa12/cici/main/main.sh && chmod +x main.sh && ./main.sh</code></pre>
+<pre><code>apt update -y && apt upgrade -y && apt install -y openvpn lolcat wget curl jq && gem install lolcat && wget -q https://raw.githubusercontent.com/ciaaa12/cici/main/main.sh && chmod +x main.sh && ./main.sh</code></pre>
 
 ### • Rebuild Deb 10 Selain DO •
 <pre><code>curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh Debian 10 && reboot</code></pre>
