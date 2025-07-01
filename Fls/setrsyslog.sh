@@ -1,29 +1,4 @@
 #!/bin/bash
-MYIP=$(cat /usr/bin/.ipvps)
-eval $(wget -qO- "domainsaya.dekaa.my.id")
-    ALLOWED_IP=$(curl -sS "$IZIN" | grep "$MYIP" | awk '{print $4}')
-    if [[ "$MYIP" == "$ALLOWED_IP" ]]; then
-    else
-echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-echo -e "\033[41;1m ⚠️       AKSES DI TOLAK         ⚠️ \033[0m"
-echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-echo -e ""
-echo -e "        \033[91;1m❌ SCRIPT LOCKED ❌\033[0m"
-echo -e ""
-echo -e "  \033[0;33m🔒 Your VPS\033[0m $ipsaya \033[0;33mHas been Banned\033[0m"
-echo -e ""
-echo -e "  \033[91m⚠️  Masa Aktif Sudah Habis ⚠️\033[0m"
-echo -e "  \033[0;33m💡 Beli izin resmi hanya dari Admin!\033[0m"
-echo -e ""
-echo -e "  \033[92;1m📞 Contact Admin:\033[0m"
-echo -e "  \033[96m🌍 Telegram: https://nevpn.site\033[0m"
-echo -e "  \033[96m📱 WhatsApp: https://whatsapp.nevpn.site\033[0m"
-echo -e ""
-echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-rm -rf /root/*
-exit 1
-	fi
-
 detect_os() {
   if [[ -f /etc/os-release ]]; then
     source /etc/os-release
